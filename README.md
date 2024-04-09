@@ -27,6 +27,24 @@ Learn API Automation with typescript
 23. DELETE methos is used to delete the existing resource on the server.
 24. We can use various assertions like toContain, toHaveProperty, toEqual etc
 25. Organize the test cases in such a way that create data with POST -> then fetch the data with GET -> then update the data with PUT -> finally delete the data with DELETE. In this way create a chain
+26. Schema validation plays key role in validating whether the response follow proper structure or not
+27. Some validations that can be performed are checking required fields, checking error messages etc
+28. Remove the dependencies between indivindual specs by creating the hooks like beforeAll(), afterAll() and perform the common operations over there
+29. For eg. create brand in beforeAll() and perform GET, PUT, DELETE operations in spec files
+30. Hooks also remove the duplicate code
+31. Use afterAll() or afterEach() hooks to cleanup the data.
+32. Create a controller class, where we can add all the methods in one place and call them into our spec file wherever needed.
+33. Create a config file to read the common properties like baseURL, email, password etc.
+34. There are various authentication memthods available
+    Bearer Token - Token based, token is passed in authorization header
+    OAuth 2.0 - Grant limited access to resources without sharing credentials
+    API Keys - Unique identifiers used for authentication
+    Basic Auth - We send user name and password in the api request header
+    JSON Web Tokens - Used for authentication and data exchange
+35. We can pass the headers in the POST request using the SET method. For eg. if we have to pass the bearer token in header we can use SET('Authorization', Bearer Token) in POST request
+36. We use jest-junit to generate reports
+
+
 
 
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="1" errors="0" time="5.887">
+  <testsuite name="Get Categories" errors="0" failures="1" skipped="0" timestamp="2024-04-06T17:16:06" time="5.833" tests="4">
+    <testcase classname="Get Categories GET Categories" name="Get Categories GET Categories" time="2.096">
+    </testcase>
+    <testcase classname="Create Categories Verify Login" name="Create Categories Verify Login" time="1.039">
+    </testcase>
+    <testcase classname="Create Categories POST Categories" name="Create Categories POST Categories" time="1.009">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 200
+Received: 422
+    at /Users/pradeepgorthi/Desktop/learn-api-automation-ts/specs/categories.spec.ts:30:32
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (/Users/pradeepgorthi/Desktop/learn-api-automation-ts/specs/categories.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Create Categories POST Categories with invalid token" name="Create Categories POST Categories with invalid token" time="0.932">
+    </testcase>
+  </testsuite>
+</testsuites>

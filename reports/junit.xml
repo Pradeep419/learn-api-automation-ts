@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="21" failures="2" errors="0" time="14.404">
+  <testsuite name="POC Tests" errors="0" failures="1" skipped="5" timestamp="2024-04-06T17:30:07" time="2.038" tests="6">
+    <testcase classname="POC Tests GET /posts" name="POC Tests GET /posts" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="POC Tests Get /comments with query params" name="POC Tests Get /comments with query params" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="POC POST Tests POST /posts" name="POC POST Tests POST /posts" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="POC PUT Tests PUT /posts" name="POC PUT Tests PUT /posts" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="POC PATCH Tests PATCH /posts" name="POC PATCH Tests PATCH /posts" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="POC Tests DELETE /posts" name="POC Tests DELETE /posts" time="0.771">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 3
++ Received  + 1
+
+- Object {
+-   &quot;id&quot;: 1,
+- }
++ Object {}
+    at /Users/pradeepgorthi/Desktop/learn-api-automation-ts/specs/poc.spec.ts:69:31
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (/Users/pradeepgorthi/Desktop/learn-api-automation-ts/specs/poc.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Get Categories" errors="0" failures="1" skipped="0" timestamp="2024-04-06T17:30:07" time="6.191" tests="4">
+    <testcase classname="Get Categories GET Categories" name="Get Categories GET Categories" time="2.24">
+    </testcase>
+    <testcase classname="Create Categories Verify Login" name="Create Categories Verify Login" time="0.929">
+    </testcase>
+    <testcase classname="Create Categories POST Categories" name="Create Categories POST Categories" time="0.898">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 200
+Received: 422
+    at /Users/pradeepgorthi/Desktop/learn-api-automation-ts/specs/categories.spec.ts:30:32
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (/Users/pradeepgorthi/Desktop/learn-api-automation-ts/specs/categories.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Create Categories POST Categories with invalid token" name="Create Categories POST Categories with invalid token" time="0.907">
+    </testcase>
+  </testsuite>
+  <testsuite name="Brands API validation" errors="0" failures="0" skipped="0" timestamp="2024-04-06T17:30:07" time="14.223" tests="11">
+    <testcase classname="Brands API validation GET /brands" name="Brands API validation GET /brands" time="2.917">
+    </testcase>
+    <testcase classname="Create Fetch Update and Delete new brands Create new brands POST /brands" name="Create Fetch Update and Delete new brands Create new brands POST /brands" time="0.843">
+    </testcase>
+    <testcase classname="Create Fetch Update and Delete new brands Create new brands Verify the required field" name="Create Fetch Update and Delete new brands Create new brands Verify the required field" time="0.853">
+    </testcase>
+    <testcase classname="Create Fetch Update and Delete new brands Create new brands Error for duplicate entries" name="Create Fetch Update and Delete new brands Create new brands Error for duplicate entries" time="2.068">
+    </testcase>
+    <testcase classname="Create Fetch Update and Delete new brands GET /brands" name="Create Fetch Update and Delete new brands GET /brands" time="0.82">
+    </testcase>
+    <testcase classname="Create Fetch Update and Delete new brands PUT /brands" name="Create Fetch Update and Delete new brands PUT /brands" time="0.922">
+    </testcase>
+    <testcase classname="Create Fetch Update and Delete new brands PUT /brands with max character length" name="Create Fetch Update and Delete new brands PUT /brands with max character length" time="1.007">
+    </testcase>
+    <testcase classname="Create Fetch Update and Delete new brands PUT /brands with description not a string" name="Create Fetch Update and Delete new brands PUT /brands with description not a string" time="0.827">
+    </testcase>
+    <testcase classname="Create Fetch Update and Delete new brands GET name of /brands" name="Create Fetch Update and Delete new brands GET name of /brands" time="0.928">
+    </testcase>
+    <testcase classname="Create Fetch Update and Delete new brands DELETE /brands" name="Create Fetch Update and Delete new brands DELETE /brands" time="0.868">
+    </testcase>
+    <testcase classname="Create Fetch Update and Delete new brands GET name of /brands" name="Create Fetch Update and Delete new brands GET name of /brands" time="0.917">
+    </testcase>
+  </testsuite>
+</testsuites>
